@@ -28,10 +28,10 @@
   </head>
 
   <body>
-    <div class="container-lg">
+    <div id="pdf-content" class="container-lg">
       <div class="row shadow-lg rounded-4 overflow-hidden">
         <!-- Columna Izuierda -->
-        <div class="col-md-4 bg-primary text-white p-4">
+        <div class="col-md-5 bg-primary text-white p-3">
           <header class="text-center mb-1">
             <img
               src="img/Foto.jpg"
@@ -168,7 +168,73 @@
 
         </div>
         <!-- Columna Derecha -->
+         <div class="col-md-7 bg-light p-4">
+                <section class="mb-4">
+                    <h4 class="fw-bold mb-3">
+                        <i class="fas fa-user-graduate me-2"></i>
+                        Formación Académica
+                    </h4>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <ul class="list-unstyled">
+                                    <li class="mb-3">
+                                        <h5 class="fw-bold">Ingeniería En Informatica</h5>
+                                        <p class="mb-1">Universidad de Caldas</p>
+                                        <p class="text-muted">2023 - Presente</p>
+                                    </li>
+                                    <li class="mb-3">
+                                        <h5 class="fw-bold">Bachillerato</h5>
+                                        <p class="mb-1">Institución Educativa San Pio X</p>
+                                        <p class="text-muted">2016</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+                <section class="mb-4">
+                    <h4 class="fw-bold mb-3">
+                        <i class="fas fa-briefcase me-2"></i>
+                        Experiencia Laboral
+                    </h4>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <ul class="list-unstyled">
+                                    <li class="mb-3">
+                                        <h5 class="fw-bold">Desarrollador Web Junior</h5>
+                                        <p class="mb-1">Empresa XYZ</p>
+                                        <p class="text-muted">Enero 2025 - Presente</p>
+                                        <p>Desarrollo de aplicaciones web utilizando HTML, CSS y JavaScript.</p>
+                                    </li>
+                                    <li class="mb-3">
+                                        <h5 class="fw-bold">Prácticas de Desarrollo</h5>
+                                        <p class="mb-1">Empresa ABC</p>
+                                        <p class="text-muted">Junio 2025 - Actualidad</p>
+                                        <p>Colaboración en proyectos de desarrollo web y mantenimiento de sistemas
+                                            existentes.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+            </div>
       </div>
     </div>
+
+    <div class="text-center my-3">
+        <button onclick="downloadPDF()" class="btn btn-outline-primary">
+            Descargar PDF
+        </button>
+    </div>
+
+    <script src="https://unpkg.com/html2pdf.js@0.10.1/dist/html2pdf.bundle.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
